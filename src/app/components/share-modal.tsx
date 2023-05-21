@@ -39,7 +39,7 @@ export default function ShareModal
 
   const generateLink = () => {
     setMessage({style: '', text: ''});
-    const domain = process.env.NEXT_PUBLIC_DOMAIN ?? 'https://luxury-escapes.vercel.app';
+    const domain = process.env.NEXT_PUBLIC_DOMAIN ?? 'https://tinder-project-main-96t074cwt-fkelv.vercel.app/';
     const validatedUsername = isValidUsername(name);
     if (!validatedUsername) { setMessage({style: 'text-red-500', text: 'Invalid Username !'}); return; }
     const swipesToString = (dir:string):string => swipes.filter(swipe => swipe.direction === dir).map(swipe => swipe.id).join('+');
